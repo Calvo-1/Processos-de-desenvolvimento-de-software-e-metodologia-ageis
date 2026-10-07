@@ -1,0 +1,70 @@
+4 Bim
+Semana 21 - Processos
+ferramente: glit (Repositórios: Processos)
+
+semana 21 - Cultura DevOps e 
+Feedback contínuo
+
+Métricas dora -> são utilizadas p/avaliar o desempenho de uma equipe de desenvolvimento e entrega de software. eles ajudam a responder:
+- Com que rapídez entregamos? com que frequência e com que qualidade?
+
+-------------------------------------------------	
+|     Métrica	|  O que mede?	|Calculo Básico	|
+|---------------|---------------|---------------|
+|1. Deployment	|   Freq. de 	|n° de deploys	|
+|frequency	|Entrega	|pelo período	|
+|---------------|---------------|---------------|
+|2. Lead time	|Tempo entre	|Data/hora do 	|
+|for changes	|Alternação e	|deploy/hora 	|
+|		|implementação	|commit		|
+|---------------|---------------|---------------|
+|3. Change 	|Percentual de	|Falhas pelo 	|
+|failure rate	|mudanças que	|total de	|
+|		|causaram 	|mudanças X 100	|
+|		|problemas	|		|
+|---------------|---------------|---------------|
+|4. Time to 	|Tempo para 	|Tempo de 	|
+|restore	|recuperar o	|recuperação	|
+|		|serviço após 	|-inicio da	|
+|		|uma falha	|falha		|
+-------------------------------------------------
+
+Calculos testes
+
+1 - Deployment frequency (Frequência de implantação)
+--> Indica quantas vezes uma equipe  coloca alterações em produção
+durante determinado período
+	Fórmula:
+	DF = nº deploys/período
+	Ex: Uma equipe realizou 20 deploys em
+	5 dias.
+	Cálculo: 20/5 = 4 deploys por dia
+	Isso significa que a equipe realiza, em média 
+4 implantações por dia.
+----------------------------------------------------------------
+2 - Lead Time for changes (Tempo de entrega)
+Mede quanto tempo uma alteração leva desde o momento em que é
+criada/commitada até estar disponível em produção.
+	Ex: Commit: segunda-feira, 10h
+	    deploy: terça-feira, 10h
+      Tempo: 24h
+----------------------------------------------------------------
+3 - Change failure rate - taxa de falha das mudanças.
+Indica qual % das alterações implantadas causou problemas 
+como: Bugs, rollback ou incidentes.
+	CFR = (Nº de mudanças com falha/Total de mudanças) X 100.
+Ex: Uma equipe  realizou 50 deploys e 5 apresentaram falhas.
+ 	
+	Cálcuolo: 5/50 X 100 = 10%
+isso significa que 10% das mudanças implantadas resultaram 
+algum tipo de falha!
+----------------------------------------------------------------
+4 - Time to restore - Tempo para restaurar.
+	Também conhecido como MTTR (Mean Time To Restore)
+em muitos contextos. Mede quanto tempo a equipe leva para 
+recuperar o serviço depois que ocorre uma falha.
+
+Fórmula: tempo de restauração = hora de 
+recuperação/hora do inicio da falha.
+
+	Falha começou: 14h00/Serviço restaurado: 15h30  ---: 1h30 min
