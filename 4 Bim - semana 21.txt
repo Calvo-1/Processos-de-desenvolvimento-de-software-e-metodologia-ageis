@@ -12,21 +12,21 @@ Métricas dora -> são utilizadas p/avaliar o desempenho de uma equipe de desenv
 |     Métrica	|  O que mede?	|Calculo Básico	|
 |---------------|---------------|---------------|
 |1. Deployment	|   Freq. de 	|n° de deploys	|
-|frequency	|Entrega	|pelo período	|
+|frequency  	|Entrega	    |pelo período	|
 |---------------|---------------|---------------|
 |2. Lead time	|Tempo entre	|Data/hora do 	|
 |for changes	|Alternação e	|deploy/hora 	|
-|		|implementação	|commit		|
+|		        |implementação	|commit		    |
 |---------------|---------------|---------------|
-|3. Change 	|Percentual de	|Falhas pelo 	|
-|failure rate	|mudanças que	|total de	|
-|		|causaram 	|mudanças X 100	|
-|		|problemas	|		|
+|3. Change 	    |Percentual de	|Falhas pelo 	|
+|failure rate	|mudanças que	|total de	    |
+|		        |causaram   	|mudanças X 100	|
+|		        |problemas	    |		        |
 |---------------|---------------|---------------|
-|4. Time to 	|Tempo para 	|Tempo de 	|
-|restore	|recuperar o	|recuperação	|
-|		|serviço após 	|-inicio da	|
-|		|uma falha	|falha		|
+|4. Time to 	|Tempo para 	|Tempo de 	    |
+|restore	    |recuperar o	|recuperação	|
+|		        |serviço após 	|-inicio 	    |
+|		        |uma falha	    |falha		    | 
 -------------------------------------------------
 
 Calculos testes
